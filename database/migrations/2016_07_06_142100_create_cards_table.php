@@ -8,12 +8,13 @@ class CreateCardsTable extends Migration
     /**
      * Run the migrations.
      *
+     * 
      * @return void
      */
     public function up()
     {
         Schema::create('cards', function (Blueprint $table) {
-            $table->increments('id'); 
+            $table->increments('id');
             $table->string('title');
             $table->timestamps();
         });
