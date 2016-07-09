@@ -2,11 +2,11 @@
 
 @section('content')
 
-    <h1>All Cards
-    @foreach(as $card)
+    <h1>All Cards</h1>
+    @foreach($cards as $card)
 
         <div>
-            {{$card -> title}}
+            {{$card->title}}
         </div>
     @endforeach
 @stop
